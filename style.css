@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+} 
+
+/* variables */
+
+:root {
+--Lightred: hsl(0, 100%, 67%);
+--Orangeyellow: hsl(39, 100%, 56%);
+--Greenteal: hsl(166, 100%, 37%);
+--Cobaltblue: hsl(234, 85%, 45%); 
+
+--White: hsl(0, 0%, 100%);
+--Paleblue: hsl(221, 100%, 96%);
+--Lightlavender: hsl(241, 100%, 89%);
+--Darkgrayblue: hsl(224, 30%, 27%); 
+
+--fs: 18px;
+} 
+
+/* global styles */  
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif; 
+  font-size: var(--fs);
+}
+
+button {  
+ display: inline-block;
+ font-family: 'Hanken Grotesk', sans-serif;
+ border: none;
+ border-radius: 30px;
+ background: var(--Darkgrayblue); 
+ color: var(--White);
+ padding: 1.2rem 1rem; 
+ width: 22rem;
+ font-size: var(--fs); 
+ margin-top: 0.5rem;
+} 
+
+button:hover {
+  cursor: pointer;
+  background: var(--Cobaltblue); 
+  transition: all .5s linear;
+}
+
+section { 
+  display: flex;
+  justify-content: start;
+  align-items: center; 
+  flex-direction: column;
+  height: 100vh; 
+  background: var(--White);
+}    
+
+/* global classes */
+ 
+.footer-sec {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.res { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--Darkgrayblue);
+  margin: 1rem 4rem; 
+  padding: 1rem 1rem; 
+  border-radius: 10px;
+}   
+
+.res span { 
+  color: var(--Darkgrayblue);
+  font-size: 16px; 
+  font-weight: 800;
+}
+
+.res p {
+  color: silver; 
+  font-size: 15px; 
+  font-weight: 800;
+}
+
+.btn-wrapper {
+  text-align: center;
+} 
+
+.icon-title {
+  display: flex;
+  gap: 1rem;
+} 
+
+.icon-title p { 
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* your result */  
+
+.results-main {   
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  color: var(--White); 
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%)); 
+  padding: 2rem; 
+  height: 23rem; 
+  width: 100vw;
+}   
+
+.re-main-text {
+  text-align: center;
+}
+
+.results-title { 
+  color: var(--Lightlavender);  
+  margin-bottom: 1.5rem; 
+}   
+
+.result {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0)); 
+  padding: 1.8rem;
+  border-radius: 90px;  
+  width: 9.5rem;
+  height: 10rem; 
+} 
+
+.result span {
+  display: block; 
+  font-size: 55px;
+  font-weight: 800;
+} 
+
+.result p { 
+  color: var(--Lightlavender);
+  font-size: 15px;
+} 
+
+.result span, 
+p {
+  text-align: center;
+} 
+
+.re-title { 
+  margin: 0.5rem;
+  font-size: 1.5rem; 
+  font-weight: 500;
+} 
+
+.re-text { 
+  width: 17rem;
+  font-size: 15px;
+  color: var(--Lightlavender);
+} 
+
+/* summary */ 
+
+.re-sec-title {
+  margin: 1.5rem 0; 
+  margin-left: 4rem;  
+  font-size: var(--fs);
+  font-weight: 800;
+}
+
+.sum-1 {
+  background-color: hsla(0, 100%, 67%, 5%);
+} 
+
+.ic1 p {
+  color: var(--Lightred);
+}
+
+.sum-2 {
+  background-color:  hsla(39, 100%, 56%,
+  5%); 
+} 
+
+.ic2 p {
+ color: var(--Orangeyellow);
+}
+
+.sum-3 {
+  background-color: hsla(166, 100%, 37%, 
+  5%);
+}  
+
+.ic3 p {
+  color: var(--Greenteal);
+}
+
+.sum-4 {
+  background-color: hsla(234, 85%, 45%, 
+  5%);
+}  
+
+
+.ic4 p {
+  color: var(--Cobaltblue);
+}
+
+@media screen and (min-width:992px) {
+
+  section {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .results-center { 
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .results-main {   
+    height: 450px;
+    border-radius: 25px;
+    width: 340px;
+  }   
+
+  .result { 
+    width: 10rem;
+    height: 10rem; 
+    border-radius: 90px;
+  } 
+
+  .result span {
+    margin-top: .5rem;
+  }
+
+  .re-text {  
+    /* margin-bottom: 1.5rem; */
+    width: 12rem;
+  }   
+
+  .re-title { 
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+
+  .results-secondary {  
+    height: 450px;
+    width: 400px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 5px 5px 20px 5px var(--Paleblue);
+  } 
+
+  button {    
+    width: 16rem;
+    padding: 1rem 1rem; 
+  }  
+} 
